@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldTravel</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../styles/css/custom.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../resources/logos/logo_web.png" type="image/x-icon">
+
+    <style>
+        html {
+            display: none;
+            /* Ocultamos hasta que i18next termine */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Botón fijo con icono hacia arriba -->
+    <a href="#header" aria-label="Sube al header" class="btn btn-primary position-fixed bottom-0 end-0 m-3"
+        role="button">
+        <i class="bi bi-chevron-double-up"></i>
+    </a>
+
+    <!-- ENCABEZADO -->
+    <header id="header" class="px-4" role="banner">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-semitransparent fixed-top px-3" role="navigation"
+                aria-label="Menú de navegación">
+
+                <!-- Logo -->
+                <div class="col-2 text-center">
+                    <a href="../index.html" class="logo d-flex align-items-center text-black text-decoration-none" tabindex="0"
+                        aria-label="Ir a la página principal">
+                        <img src="../resources/logos/logo_web.png" alt="Logo de la web" width="40" height="40"
+                            class="me-2" />
+                        <!-- data-i18n para el nombre de la marca -->
+                        <span class="fs-5 fw-bold" data-i18n="brandName" aria-hidden="true">WorldTravel</span>
+                    </a>
+                </div>
+
+                <!-- Botón del menú (offcanvas) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu"
+                    aria-controls="offcanvasNavbar" aria-label="Abrir el menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navegación principal -->
+                <div class="offcanvas offcanvas-end bg-light" id="menu" tabindex="-1">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fw-bold" id="offcanvasDarkNavbarLabel" data-i18n="brandName">
+                            WorldTravel</h5>
+                        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar menú"></button>
+                    </div>
+
+                    <div class="offcanvas-body d-flex align-items-center">
+                        <!-- Menú principal -->
+                        <nav class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav flex-grow-1 pe-3 justify-content-start">
+                                <li class="nav-item me-1">
+                                    <a href="../index.html" class="nav-link px-2 text-black"
+                                        aria-label="Ir a la página de inicio" data-i18n="nav_home">Inicio</a>
+                                </li>
+                                <li class="nav-item me-1">
+                                    <a href="../pages/about.html" class="nav-link px-2 text-black" aria-label="Sobre mí"
+                                        data-i18n="nav_sobreMi">Sobre mí</a>
+                                </li>
+                                <li class="nav-item me-1">
+                                    <a href="../pages/contacto.html" class="nav-link active px-2 text-black"
+                                        aria-label="Contacto" data-i18n="nav_contacto">Contacto</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- Barra de separación (opcional) -->
+                        <hr class="border-1 bg-black my-2 mt-2 mb-4 display d-none" />
+
+                        <!-- Buscador -->
+                        <form class="d-flex search-form" role="search">
+                            <input type="search" class="form-control search-input" placeholder="Buscar..."
+                                aria-label="Buscar en el sitio">
+                            <button class="btn search-btn" type="submit" aria-label="Buscar">
+                                <i class="bi bi-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+
+                        <!-- Selector de idiomas (dropdown) -->
+                        <div class="idioma dropdown ms-3">
+                            <button class="btn btn-none dropdown-toggle d-flex align-items-center" type="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                aria-label="Seleccionar idioma" id="langDropdown">
+                                <!-- Bandera por defecto -->
+                                <img id="currentLangFlag" src="../resources/img/spain.png" alt="Bandera de España"
+                                    width="25" height="25" class="me-2" />
+                                <span id="currentLangLabel">Es</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="langDropdown">
+                                <!-- Español -->
+                                <button class="dropdown-item lang-option" data-lang="es">
+                                    <img src="../resources/img/spain.png" alt="Bandera de España" width="25" height="25"
+                                        class="me-2" />
+                                    Es
+                                </button>
+                                <!-- Inglés -->
+                                <button class="dropdown-item lang-option" data-lang="en">
+                                    <img src="../resources/img/UK.png" alt="Bandera de Reino Unido" width="25"
+                                        height="25" class="me-2" />
+                                    En
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Carrito de la compra -->
+                        <a class="text-decoration-none cesta btn me-2 text-black" href="../pages/es/carrito_es.html"
+                            aria-label="Ir al carrito">
+                            <i class="bi bi-cart2" aria-hidden="true"></i>
+                        </a>
+
+                        <!-- Login -->
+                        <a id="login" class="text-decoration-none login btn btn-primary btn-sm text-white"
+                            href="../pages/login.html" aria-label="Ir a login" data-i18n="btn_login">
+                            Login
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container-fluid my-3 py-4" role="main">
+        <div class="container-fluid">
+            <header class="d-flex align-items-center mt-5 justify-content-between py-3">
+                <div class="border-top border-primary flex-grow-1 mx-5"></div>
+                <!-- Título "¿Tienes Dudas?" -->
+                <h1 class="text-primary fs-3 text-center">
+                    <span class="text-primary">
+                        <strong data-i18n="contact_dudas">¿Tienes Dudas?</strong>
+                    </span>
+                </h1>
+                <div class="border-top border-primary flex-grow-1 mx-5"></div>
+            </header>
+            <p class="fs-6 my-0 mx-2 text-center text-black" data-i18n="contact_disposicion">
+                Estamos a tu disposición para solucionar cualquier duda las 24 horas del día.
+            </p>
+        </div>
+
+        <div class="container-fluid mt-5 d-flex flex-column flex-lg-row justify-content-around">
+            <!-- Imagen lateral (opcional en móviles) -->
+            <div class="d-none d-lg-block align-self-center img-destinos shadow p-2 bg-body w-sm-50 rounded-5 mx-lg-auto h-100"
+                style="width: 40%;">
+                <img src="../resources/img/sultan-suites-6-768x388.png"
+                    class="img-fluid rounded-5 h-100 w-100 object-fit-cover"
+                    alt="Elefantes cruzando por un rio de Sri Lanka">
+            </div>
+
+            <!-- Formulario de contacto -->
+            <div class="contacto mx-auto">
+                <div class="container">
+                    <h2 class="fs-3 mb-3 text-primary">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span data-i18n="contact_titulo">Contáctanos</span>
+                    </h2>
+                </div>
+                <form class="p-3 border border-primary rounded shadow needs-validation" novalidate>
+                    <h2 id="contact-form-title" class="mb-4" data-i18n="contact_form_titulo">Formulario de Contacto</h2>
+
+                    <!-- Campo Nombre -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label" data-i18n="contact_form_labelNombre">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Tu nombre" required
+                            aria-required="true" aria-describedby="name-help">
+                        <div id="name-help" class="form-text" data-i18n="contact_form_helpNombre">
+                            Introduce tu nombre completo.
+                        </div>
+                        <div class="invalid-feedback" data-i18n="contact_form_errorNombre">
+                            El nombre es obligatorio.
+                        </div>
+                    </div>
+
+                    <!-- Campo Correo Electrónico -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label" data-i18n="contact_form_labelEmail">Correo
+                            Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="tucorreo@email.com" required
+                            aria-required="true" aria-describedby="email-help">
+                        <div id="email-help" class="form-text" data-i18n="contact_form_helpEmail">
+                            Introduce una dirección de correo válida.
+                        </div>
+                        <div class="invalid-feedback" data-i18n="contact_form_errorEmail">
+                            El correo electrónico es obligatorio y debe ser válido.
+                        </div>
+                    </div>
+
+                    <!-- Campo Mensaje -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label" data-i18n="contact_form_labelMensaje">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje" required
+                            aria-required="true" aria-describedby="message-help"></textarea>
+                        <div id="message-help" class="form-text" data-i18n="contact_form_helpMensaje">
+                            Incluye los detalles de tu consulta o mensaje.
+                        </div>
+                        <div class="invalid-feedback" data-i18n="contact_form_errorMensaje">
+                            El mensaje no puede estar vacío.
+                        </div>
+                    </div>
+
+                    <!-- Botón Enviar -->
+                    <button type="submit" class="btn btn-primary w-100" aria-label="Enviar el formulario de contacto"
+                        data-i18n="contact_form_botonEnviar">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="w-80 my-5">
+            <div class="container">
+                <h2 class="fs-3 mb-3 text-primary w-90">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span data-i18n="contact_nuestraUbicacion">Nuestra Ubicación</span>
+                </h2>
+            </div>
+            <div class="mb-3" style="text-align: center;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3143.67755537552!2d-6.58911395331662!3d38.007980884931285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1733331355898!5m2!1ses!2ses"
+                    width="90%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    title="Mapa interactivo de la ubicación de la agencia en Hinojales(Huelva)">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Tabla: Preguntas Frecuentes -->
+        <div class="d-flex flex-column align-items-center w-80 mt-5">
+            <div class="w-90">
+                <div class="container">
+                    <h2 class="fs-3 mb-3 text-primary">
+                        <i class="bi bi-patch-question"></i>
+                        <span data-i18n="contact_preguntasFrecuentes">Preguntas frecuentes</span>
+                    </h2>
+                </div>
+                <table class="table table-hover table-striped shadow rounded">
+                    <thead class="table-primary">
+                        <tr>
+                            <th data-i18n="contact_faq_pregunta">Pregunta</th>
+                            <th class="border-start" data-i18n="contact_faq_respuesta">Respuesta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-i18n="contact_faq_1q">¿Qué servicios ofrece la agencia?</td>
+                            <td class="border-start" data-i18n="contact_faq_1a">
+                                Organizamos viajes personalizados, tours en grupo, paquetes de luna de miel y viajes de
+                                aventura.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="contact_faq_2q">¿Se pueden modificar los itinerarios?</td>
+                            <td class="border-start" data-i18n="contact_faq_2a">
+                                Sí, nuestros paquetes son flexibles y podemos adaptarlos a tus necesidades y
+                                preferencias.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="contact_faq_3q">¿Ofrecen asistencia durante el viaje?</td>
+                            <td class="border-start" data-i18n="contact_faq_3a">
+                                Contamos con asistencia 24/7 a través de nuestro servicio de atención al cliente.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="contact_faq_4q">¿Cómo puedo realizar una reserva?</td>
+                            <td class="border-start" data-i18n="contact_faq_4a">
+                                Puedes reservar a través de nuestra web, llamando al teléfono de atención o visitándonos
+                                en nuestras oficinas.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="contact_faq_5q">¿Qué métodos de pago aceptan?</td>
+                            <td class="border-start" data-i18n="contact_faq_5a">
+                                Aceptamos pagos con tarjeta de crédito/débito, transferencias bancarias y PayPal.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid mt-5 text-white py-4">
+        <div class="container">
+            <h3 class="fs-4 text-light mb-4" data-i18n="footer_nuestrasOficinas">
+                NUESTRAS OFICINAS
+            </h3>
+            <hr class="separador-title-oficinas mb-4 border-white w-100" />
+
+            <div class="row text-center text-md-start my-3">
+                <!-- España -->
+                <div class="col-12 col-md-4 col-lg-2 mb-4">
+                    <h4 class="fs-5" data-i18n="footer_espana">España</h4>
+                    <hr class="separador-footer border-white w-75" />
+                    <p>Paseo de la Castellana 259-C<br>Torre de Cristal Planta 18,<br>28046, Madrid.</p>
+                </div>
+                <!-- Reino Unido -->
+                <div class="col-12 col-md-4 col-lg-2 mb-4">
+                    <h4 class="fs-5" data-i18n="footer_reinoUnido">Reino Unido</h4>
+                    <hr class="separador-footer border-white w-75" />
+                    <p>Brompton Park Crescent 258,<br>SW6 1SZ, Fulham,<br>London.</p>
+                </div>
+                <!-- Portugal -->
+                <div class="col-12 col-md-4 col-lg-2 mb-4">
+                    <h4 class="fs-5" data-i18n="footer_portugal">Portugal</h4>
+                    <hr class="separador-footer border-white w-75" />
+                    <p>Rua D. B. Marques, 245,<br>Lake Towers - Edificio D,<br>2nd floor, 4400-617, Vila Nova de Gaia.
+                    </p>
+                </div>
+                <!-- Italia -->
+                <div class="col-12 col-md-4 col-lg-2 mb-4">
+                    <h4 class="fs-5" data-i18n="footer_italia">Italia</h4>
+                    <hr class="separador-footer border-white w-75" />
+                    <p>Viale Monza, 347,<br>20126, Milano.</p>
+                </div>
+                <!-- Francia -->
+                <div class="col-12 col-md-4 col-lg-2 mb-4">
+                    <h4 class="fs-5" data-i18n="footer_francia">Francia</h4>
+                    <hr class="separador-footer border-white w-75" />
+                    <p>Le Pré Catelan, 78,<br>All. Jean Jaurès Bâtiment F,<br>31100, Toulouse.</p>
+                </div>
+                <!-- Maldivas -->
+                <div class="col-12 col-md-4 col-lg-2 mb-4">
+                    <h4 class="fs-5" data-i18n="footer_maldivas">Maldivas</h4>
+                    <hr class="separador-footer border-white w-75" />
+                    <p>Ma. Funa, 2nd Floor,<br>Rah Dhebai Magu,<br>Malé.</p>
+                </div>
+            </div>
+
+            <hr class="separador-title-oficinas mb-4 border-white w-100" />
+            <div class="container">
+                <!-- Menú legal -->
+                <div class="row">
+                    <div class="col-8">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item link-footer">
+                                <a href="../aviso_legal.html" class="py-2 text-light text-decoration-none"
+                                    aria-label="Aviso legal" data-i18n="footer_avisoLegal">
+                                    Aviso legal
+                                </a>
+                            </li>
+                            <li class="list-inline-item link-footer">
+                                <a href="../aviso_legal.html" class="py-2 text-light text-decoration-none"
+                                    aria-label="Condiciones Generales" data-i18n="footer_condiciones">
+                                    Condiciones Generales
+                                </a>
+                            </li>
+                            <li class="list-inline-item link-footer">
+                                <a href="../aviso_legal.html" class="py-2 text-light text-decoration-none"
+                                    aria-label="Política de Privacidad" data-i18n="footer_privacidad">
+                                    Política de Privacidad
+                                </a>
+                            </li>
+                            <li class="list-inline-item link-footer">
+                                <a href="../aviso_legal.html" class="py-2 text-light text-decoration-none"
+                                    aria-label="Política de Cookies" data-i18n="footer_cookies">
+                                    Política de Cookies
+                                </a>
+                            </li>
+                            <li class="list-inline-item link-footer">
+                                <a href="../aviso_legal.html" class="py-2 text-light text-decoration-none"
+                                    aria-label="Media Kit" data-i18n="footer_mediakit">
+                                    Media Kit
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Redes sociales -->
+                    <div class="col-4">
+                        <span class="text-white">Síguenos:</span>
+                        <a href="https://es-es.facebook.com/" class="text-white ms-2" aria-label="Facebook"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="text-white ms-2" target="_blank"
+                            aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="pages/https://www.tiktok.com/" class="text-white ms-2" target="_blank"
+                            aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/" class="text-white ms-2" target="_blank"
+                            aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.pinterest.com/" class="text-white ms-2" target="_blank"
+                            aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                        <a href="https://www.youtube.com/" class="text-white ms-2" target="_blank"
+                            aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separador-title-oficinas mb-4 border-white w-100" />
+            <div class="container">
+                <p class="mb-0 text-center w-100 text-white" data-i18n="footer_copyright">
+                    Copyright ©2024 Travel.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mis scripts -->
+    <script type="module" src="resources/js/contacto.js"></script>
+
+    <script src="../js/idioma.js"></script>
+    <!-- Script con la configuración de i18next y las traducciones -->
+    <script>
+        //1. Recogemos el idioma guardado en el localStorage
+        const savedLang = localStorage.getItem('lang') || 'es';
+
+        // 2. Inicializamos i18next
+        i18next.init({
+            lng: savedLang,  // <--- Usamos el que recuperamos
+            resources: resources,         // Idioma por defecto
+            debug: false       // Ponlo en true para debug
+        }).then(() => {
+            // 3. Llamamos a la función que actualiza el contenido inicial
+            updateContent();
+
+            // Mostramos el HTML ahora que la traducción está lista
+            document.documentElement.style.display = 'block';
+        });
+
+        // Actualiza todos los elementos con data-i18n
+        function updateContent() {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                element.innerHTML = i18next.t(key);
+            });
+
+            // Cambiamos la bandera y el texto del botón en base al idioma actual
+            const currentLang = i18next.language;
+            const langFlag = document.getElementById('currentLangFlag');
+            const langLabel = document.getElementById('currentLangLabel');
+
+            if (currentLang === 'en') {
+                langFlag.src = "../resources/img/UK.png";
+                langFlag.alt = "UK Flag";
+                langLabel.textContent = "En";
+            } else {
+                langFlag.src = "../resources/img/spain.png";
+                langFlag.alt = "Spanish Flag";
+                langLabel.textContent = "Es";
+            }
+        }
+
+        // 4. Escuchamos los botones del dropdown para cambiar de idioma
+        document.querySelectorAll('.lang-option').forEach(button => {
+            button.addEventListener('click', () => {
+                const lang = button.getAttribute('data-lang');
+                i18next.changeLanguage(lang).then(() => {
+                    // Guardamos la preferencia en localStorage
+                    localStorage.setItem('lang', lang);
+
+                    // Actualizamos el contenido
+                    updateContent();
+                });
+            });
+        });
+
+        // Script para la barra de navegación en scroll
+        window.addEventListener("scroll", function () {
+            var navbar = document.querySelector(".navbar");
+            if (window.scrollY > 10) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+    <!-- Validación de Bootstrap (evita envío si campos invalidos) -->
+    <script>
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+
+    <!-- Script de scroll (si lo usas) -->
+    <script src="../js/scroll.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+{
+  "name": "web-project-js",
+  "version": "1.0.0",
+  "description": "Multilingual website with dynamic language switching, form validation, and JSON integration.",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcalvo-dev/Web-Project-JS.git"
+  },
+  "keywords": [
+    "project",
+    "node",
+    "nodejs",
+    "hcalvo-dev"
+  ],
+  "author": "Héctor Calvo Sánchez - hcalvo-dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcalvo-dev/Web-Project-JS/issues"
+  },
+  "homepage": "https://github.com/hcalvo-dev/Web-Project-JS#readme",
+  "devDependencies": {
+    "standard": "17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "dependencies": {
+    "i18n": "0.15.1",
+    "i18next": "24.2.1",
+    "jquery": "3.7.1",
+    "node-localstorage": "3.0.5"
+  }
+}
