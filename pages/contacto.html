@@ -38,8 +38,8 @@
 
                 <!-- Logo -->
                 <div class="col-2 text-center">
-                    <a href="../index.html" class="logo d-flex align-items-center text-black text-decoration-none" tabindex="0"
-                        aria-label="Ir a la página principal">
+                    <a href="../index.html" class="logo d-flex align-items-center text-black text-decoration-none"
+                        tabindex="0" aria-label="Ir a la página principal">
                         <img src="../resources/logos/logo_web.png" alt="Logo de la web" width="40" height="40"
                             class="me-2" />
                         <!-- data-i18n para el nombre de la marca -->
@@ -412,94 +412,8 @@
     </footer>
 
     <!-- Mis scripts -->
-    <script type="module" src="resources/js/contacto.js"></script>
+    <script type="module" src="../resources/js/contacto.js"></script>
 
-    <script src="../js/idioma.js"></script>
-    <!-- Script con la configuración de i18next y las traducciones -->
-    <script>
-        //1. Recogemos el idioma guardado en el localStorage
-        const savedLang = localStorage.getItem('lang') || 'es';
-
-        // 2. Inicializamos i18next
-        i18next.init({
-            lng: savedLang,  // <--- Usamos el que recuperamos
-            resources: resources,         // Idioma por defecto
-            debug: false       // Ponlo en true para debug
-        }).then(() => {
-            // 3. Llamamos a la función que actualiza el contenido inicial
-            updateContent();
-
-            // Mostramos el HTML ahora que la traducción está lista
-            document.documentElement.style.display = 'block';
-        });
-
-        // Actualiza todos los elementos con data-i18n
-        function updateContent() {
-            document.querySelectorAll('[data-i18n]').forEach(element => {
-                const key = element.getAttribute('data-i18n');
-                element.innerHTML = i18next.t(key);
-            });
-
-            // Cambiamos la bandera y el texto del botón en base al idioma actual
-            const currentLang = i18next.language;
-            const langFlag = document.getElementById('currentLangFlag');
-            const langLabel = document.getElementById('currentLangLabel');
-
-            if (currentLang === 'en') {
-                langFlag.src = "../resources/img/UK.png";
-                langFlag.alt = "UK Flag";
-                langLabel.textContent = "En";
-            } else {
-                langFlag.src = "../resources/img/spain.png";
-                langFlag.alt = "Spanish Flag";
-                langLabel.textContent = "Es";
-            }
-        }
-
-        // 4. Escuchamos los botones del dropdown para cambiar de idioma
-        document.querySelectorAll('.lang-option').forEach(button => {
-            button.addEventListener('click', () => {
-                const lang = button.getAttribute('data-lang');
-                i18next.changeLanguage(lang).then(() => {
-                    // Guardamos la preferencia en localStorage
-                    localStorage.setItem('lang', lang);
-
-                    // Actualizamos el contenido
-                    updateContent();
-                });
-            });
-        });
-
-        // Script para la barra de navegación en scroll
-        window.addEventListener("scroll", function () {
-            var navbar = document.querySelector(".navbar");
-            if (window.scrollY > 10) {
-                navbar.classList.add("scrolled");
-            } else {
-                navbar.classList.remove("scrolled");
-            }
-        });
-    </script>
-
-    <!-- Validación de Bootstrap (evita envío si campos invalidos) -->
-    <script>
-        (() => {
-            'use strict';
-            const forms = document.querySelectorAll('.needs-validation');
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                    }
-                    form.classList.add('was-validated');
-                }, false);
-            });
-        })();
-    </script>
-
-    <!-- Script de scroll (si lo usas) -->
-    <script src="../js/scroll.js"></script>
 </body>
 
 </html>

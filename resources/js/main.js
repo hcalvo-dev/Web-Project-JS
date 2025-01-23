@@ -8,6 +8,8 @@ import { resources } from '../js/traductions.js'
 
 import '../../node_modules/i18next/dist/umd/i18next.min.js'
 
+import '../js/destinos.js'
+
 // Espera a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Recogemos el idioma guardado en el localStorage del navegador
@@ -73,19 +75,5 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('Botón sin atributo data-lang:', button)
       }
     })
-  })
-
-  // Script para la barra de navegación en scroll
-  window.addEventListener('scroll', function () {
-    const navbar = document.querySelector('.navbar')
-    if (navbar) { // Verifica que el elemento navbar exista
-      if (window.scrollY > 10) {
-        navbar.classList.add('scrolled')
-      } else {
-        navbar.classList.remove('scrolled')
-      }
-    } else {
-      console.warn('Elemento navbar no encontrado en el DOM.')
-    }
   })
 })

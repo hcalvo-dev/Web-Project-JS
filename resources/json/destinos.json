@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Sri Lanka",
+        "days": "8 noches - 9 días",
+        "description": "El tour Vacaciones de Lujo en Sri ha sido especialmente diseñado...",
+        "price": "Desde 2.280€",
+        "image": "resources/img/sri_lanka.png",
+        "link": "pages/aviso_legal.html",
+        "alt": "Sri Lanka, paisaje tropical con playas y montañas"
+    },
+    {
+        "id": 2,
+        "name": "Dubái & Seuchelles",
+        "days": "10 noches - 11 días",
+        "description": "Con este viaje combinado Dubái & Seuchelles podrás explorar...",
+        "price": "Desde 3.460€",
+        "image": "resources/img/arab-dubai.png",
+        "link": "pages/aviso_legal.html",
+        "alt": "Vista del atardecer de Dubai con un rascacielos"
+    },
+    {
+        "id": 3,
+        "name": "Golden Triangle & Udaipur",
+        "days": "8 noches - 9 días",
+        "description": "Con el tour Descubre India 8 noches, podrás conocer...",
+        "price": "Desde 2.560€",
+        "image": "resources/img/viaje-india.png",
+        "link": "pages/aviso_legal.html",
+        "alt": "Monje de una tribu India"
+    },
+    {
+        "id": 4,
+        "name": "Kenia Luxury Safari",
+        "days": "7 noches - 8 días",
+        "description": "El Luxury Safari es el itinerario indicado para quien busca...",
+        "price": "Desde 4.040€",
+        "image": "resources/img/mara-safari.png",
+        "link": "pages/aviso_legal.html",
+        "alt": "Kenia, habitación de Hotel con vistas a la montaña"
+    },
+    {
+        "id": 5,
+        "name": "Grandes Parques de Tanzania",
+        "days": "6 noches - 7 días",
+        "description": "¿Quieres ver de cerca a los Big Five en...",
+        "price": "Desde 4.830€",
+        "image": "resources/img/tanzania.png",
+        "link": "pages/aviso_legal.html",
+        "alt": "Tanzania, grandes parques naturales y fauna africana"
+    },
+    {
+        "id": 6,
+        "name": "Constancia Ephelia Seychelles",
+        "days": "6 noches - 7 días",
+        "description": "Vive todo lo mejor que puede ofrecerte un viaje a...",
+        "price": "Desde 2.730€",
+        "image": "resources/img/ephelia.png",
+        "link": "pages/aviso_legal.html",
+        "alt": "Seychelles, playa tropical en el resort Constance Ephelia"
+    },
+    {
+        "id": 7,
+        "name": "Tahiti, Moore & Bora Bora",
+        "days": "9 noches - 10 días",
+        "description": "Descubre la joya del pacífico con este viaje a Polinesia...",
+        "price": "Desde 6.595€",
+        "image": "resources/img/viaje-polinesia.png",
+        "link": "pages/aviso_legal.html",
+        "alt": "Polinesia Francesa, Tahiti, Moorea y Bora Bora, vistas de playas paradisíacas"
+    }
+]
