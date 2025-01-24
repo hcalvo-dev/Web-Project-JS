@@ -3,12 +3,14 @@
 export const resources = {
   es: {
     translation: {
+      // Barra de navegación
       brandName: 'WorldTravel',
       nav_home: 'Inicio',
       nav_sobreMi: 'Sobre mí',
       nav_contacto: 'Contacto',
       btn_login: 'Login',
 
+      // -- Home --
       home_titulo: 'VIAJES EXÓTICOS',
       home_subtitulo: 'Encuentra las vacaciones perfectas.<br/>Viajes a medida y en privado.<br/>Experiencias inolvidables.',
       home_boton: 'Quiero mi plan',
@@ -71,7 +73,7 @@ export const resources = {
       // Recomendaciones
       home_recomendaciones: 'Recomendado por',
 
-      // -- CONTACTO, ENCABEZADO --
+      // -- CONTACTO --
       contact_dudas: '¿Tienes Dudas?',
       contact_disposicion: 'Estamos a tu disposición para solucionar cualquier duda las 24 horas del día.',
       contact_titulo: 'Contáctanos',
@@ -109,6 +111,14 @@ export const resources = {
       contact_faq_5q: '¿Qué métodos de pago aceptan?',
       contact_faq_5a: 'Aceptamos pagos con tarjeta de crédito/débito, transferencias bancarias y PayPal.',
 
+      // -- SOBRE MI --
+
+      // -- AVISO LEGAL --
+      loading: 'Cargando...',
+      coming_soon: '¡Estamos trabajando en ello!',
+      coming_soon_text: 'Estamos preparando algo increíble para ti. Por favor, vuelve pronto.',
+      return_home: 'Volver al inicio',
+
       // -- FOOTER --
       footer_nuestrasOficinas: 'NUESTRAS OFICINAS',
       footer_espana: 'España',
@@ -130,12 +140,14 @@ export const resources = {
   },
   en: {
     translation: {
+      // -- NAVIGATION BAR --
       brandName: 'WorldTravel',
       nav_home: 'Home',
       nav_sobreMi: 'About Me',
       nav_contacto: 'Contact',
       btn_login: 'Login',
 
+      // -- HOME --
       home_titulo: 'EXOTIC TRIPS',
       home_subtitulo: 'Find the perfect vacation.<br/>Tailor-made and private trips.<br/>Unforgettable experiences.',
       home_boton: 'I want my plan',
@@ -150,55 +162,55 @@ export const resources = {
       carousel_slide1_days: '8 nights - 9 days',
       carousel_slide1_name: 'Sri Lanka',
       carousel_slide1_description: 'The Luxury Vacation in Sri tour has been specially designed...',
-      carousel_slide1_price: 'From €2,280',
+      carousel_slide1_price: 'From 2,280$',
       carousel_slide1_button: 'See more',
 
       // Slide 2
       carousel_slide2_days: '10 nights - 11 days',
       carousel_slide2_name: 'Dubai & Seychelles',
       carousel_slide2_description: 'With this combined trip Dubai & Seychelles you can explore...',
-      carousel_slide2_price: 'From €3,460',
+      carousel_slide2_price: 'From 3,460$',
       carousel_slide2_button: 'See more',
 
       // Slide 3
       carousel_slide3_days: '8 nights - 9 days',
       carousel_slide3_name: 'Golden Triangle & Udaipur',
       carousel_slide3_description: 'With the Discover India 8-night tour, you can get to know...',
-      carousel_slide3_price: 'From €2,560',
+      carousel_slide3_price: 'From 2,560$',
       carousel_slide3_button: 'See more',
 
       // Slide 4
       carousel_slide4_days: '7 nights - 8 days',
       carousel_slide4_name: 'Kenya Luxury Safari',
       carousel_slide4_description: 'The Luxury Safari is the perfect itinerary for those looking for...',
-      carousel_slide4_price: 'From €4,040',
+      carousel_slide4_price: 'From 4,040$',
       carousel_slide4_button: 'See more',
 
       // Slide 5
       carousel_slide5_day: '6 nights - 7 days',
       carousel_slide5_name: 'Tanzania’s Great Parks',
       carousel_slide5_description: 'Do you want to see the Big Five up close in...',
-      carousel_slide5_price: 'From €4,830',
+      carousel_slide5_price: 'From 4,830$',
       carousel_slide5_button: 'See more',
 
       // Slide 6
       carousel_slide6_days: '6 nights - 7 days',
       carousel_slide6_name: 'Constance Ephelia Seychelles',
       carousel_slide6_description: 'Experience all the best a trip to ... can offer',
-      carousel_slide6_price: 'From €2,730',
+      carousel_slide6_price: 'From 2,730$',
       carousel_slide6_button: 'See more',
 
       // Slide 7
       carousel_slide7_days: '9 nights - 10 days',
       carousel_slide7_name: 'Tahiti, Moore & Bora Bora',
       carousel_slide7_description: 'Discover the jewel of the Pacific with this trip to Polynesia...',
-      carousel_slide7_price: 'From €6,595',
+      carousel_slide7_price: 'From 6,595$',
       carousel_slide7_button: 'See more',
 
       // Recomendaciones
       home_recomendaciones: 'Recommended by',
 
-      // -- CONTACT, HEADER --
+      // -- CONTACT --
       contact_dudas: 'Have any questions?',
       contact_disposicion: 'We are available 24/7 to solve any query you have.',
       contact_titulo: 'Contact Us',
@@ -235,6 +247,14 @@ export const resources = {
       contact_faq_4a: 'You can book through our website, by phone or by visiting our offices.',
       contact_faq_5q: 'What payment methods do you accept?',
       contact_faq_5a: 'We accept credit/debit cards, bank transfers, and PayPal.',
+
+      // -- SOBRE MI --
+
+      // -- AVISO LEGAL --
+      loading: 'Loading...',
+      coming_soon: 'We are working on it!',
+      coming_soon_text: 'We are preparing something incredible for you. Please come back soon.',
+      return_home: 'Back to top',
 
       // -- FOOTER --
       footer_nuestrasOficinas: 'OUR OFFICES',

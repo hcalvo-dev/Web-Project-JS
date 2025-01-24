@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "pregunta": "¿Qué servicios ofrece la agencia?",
+        "respuesta": "Organizamos viajes personalizados, tours en grupo, paquetes de luna de miel y viajes de aventura.",
+        "usuarioPregunta": "Carlos",
+        "usuarioRespuesta": "Sofía"
+    },
+    {
+        "id": 2,
+        "pregunta": "¿Se pueden modificar los itinerarios?",
+        "respuesta": "Sí, nuestros paquetes son flexibles y podemos adaptarlos a tus necesidades y preferencias.",
+        "usuarioPregunta": "María",
+        "usuarioRespuesta": "Luis"
+    },
+    {
+        "id": 3,
+        "pregunta": "¿Ofrecen asistencia durante el viaje?",
+        "respuesta": "Contamos con asistencia 24/7 a través de nuestro servicio de atención al cliente.",
+        "usuarioPregunta": "Jorge",
+        "usuarioRespuesta": "Elena"
+    },
+    {
+        "id": 4,
+        "pregunta": "¿Cómo puedo realizar una reserva?",
+        "respuesta": "Puedes reservar a través de nuestra web, llamando al teléfono de atención o visitándonos en nuestras oficinas.",
+        "usuarioPregunta": "Ana",
+        "usuarioRespuesta": "Fernando"
+    },
+    {
+        "id": 5,
+        "pregunta": "¿Qué métodos de pago aceptan?",
+        "respuesta": "Aceptamos pagos con tarjeta de crédito/débito, transferencias bancarias y PayPal.",
+        "usuarioPregunta": "Luis",
+        "usuarioRespuesta": "Isabel"
+    },
+    {
+        "id": 6,
+        "pregunta": "¿Tienen opciones para viajes de aventura?",
+        "respuesta": "Sí, ofrecemos paquetes de aventura que incluyen actividades como senderismo, buceo y safaris.",
+        "usuarioPregunta": "Diana",
+        "usuarioRespuesta": "Raúl"
+    },
+    {
+        "id": 7,
+        "pregunta": "¿Qué destinos son los más populares?",
+        "respuesta": "Nuestros destinos más solicitados son Maldivas, Tailandia, Italia y Costa Rica.",
+        "usuarioPregunta": "Gabriel",
+        "usuarioRespuesta": "Laura"
+    },
+    {
+        "id": 8,
+        "pregunta": "¿Qué documentación necesito para viajar?",
+        "respuesta": "Dependiendo del destino, necesitarás tu pasaporte, visado y otros documentos que nuestro equipo te ayudará a gestionar.",
+        "usuarioPregunta": "Marta",
+        "usuarioRespuesta": "Sergio"
+    },
+    {
+        "id": 9,
+        "pregunta": "¿Ofrecen descuentos para grupos grandes?",
+        "respuesta": "Sí, contamos con descuentos especiales para grupos de más de 10 personas.",
+        "usuarioPregunta": "Andrés",
+        "usuarioRespuesta": "Carmen"
+    },
+    {
+        "id": 10,
+        "pregunta": "¿Se puede cambiar la fecha de un viaje reservado?",
+        "respuesta": "Sí, puedes cambiar la fecha sujeto a disponibilidad y a nuestras políticas de modificación.",
+        "usuarioPregunta": "Lucía",
+        "usuarioRespuesta": "Mario"
+    },
+    {
+        "id": 11,
+        "pregunta": "¿Incluyen seguro de viaje en los paquetes?",
+        "respuesta": "Ofrecemos seguros de viaje opcionales que puedes añadir a tu paquete.",
+        "usuarioPregunta": "Sara",
+        "usuarioRespuesta": "Javier"
+    },
+    {
+        "id": 12,
+        "pregunta": "¿Qué sucede si necesito cancelar mi viaje?",
+        "respuesta": "Aplica nuestra política de cancelación, que incluye reembolsos según el tiempo de anticipación.",
+        "usuarioPregunta": "Iván",
+        "usuarioRespuesta": "Claudia"
+    },
+    {
+        "id": 13,
+        "pregunta": "¿Hay paquetes familiares disponibles?",
+        "respuesta": "Sí, tenemos paquetes especialmente diseñados para familias con actividades para todas las edades.",
+        "usuarioPregunta": "Carmen",
+        "usuarioRespuesta": "Jorge"
+    },
+    {
+        "id": 14,
+        "pregunta": "¿Se pueden reservar vuelos a través de su agencia?",
+        "respuesta": "Sí, ofrecemos reserva de vuelos junto con los paquetes o como servicio independiente.",
+        "usuarioPregunta": "Óscar",
+        "usuarioRespuesta": "María"
+    },
+    {
+        "id": 15,
+        "pregunta": "¿Qué sucede si pierdo mi vuelo?",
+        "respuesta": "Nuestro equipo de asistencia te ayudará a gestionar un vuelo alternativo según las políticas de la aerolínea.",
+        "usuarioPregunta": "Julia",
+        "usuarioRespuesta": "Sofía"
+    },
+    {
+        "id": 16,
+        "pregunta": "¿Ofrecen paquetes todo incluido?",
+        "respuesta": "Sí, contamos con paquetes todo incluido que cubren transporte, alojamiento y actividades.",
+        "usuarioPregunta": "Carlos",
+        "usuarioRespuesta": "Elena"
+    },
+    {
+        "id": 17,
+        "pregunta": "¿Puedo pagar en cuotas?",
+        "respuesta": "Sí, ofrecemos planes de pago en cuotas con ciertas condiciones.",
+        "usuarioPregunta": "Ana",
+        "usuarioRespuesta": "Fernando"
+    },
+    {
+        "id": 18,
+        "pregunta": "¿Qué actividades ofrecen en destinos de playa?",
+        "respuesta": "Incluimos actividades como snorkel, paseos en bote y deportes acuáticos.",
+        "usuarioPregunta": "Luis",
+        "usuarioRespuesta": "Laura"
+    },
+    {
+        "id": 19,
+        "pregunta": "¿Es posible incluir transporte desde mi casa al aeropuerto?",
+        "respuesta": "Sí, podemos gestionar transporte privado desde tu domicilio al aeropuerto.",
+        "usuarioPregunta": "Gabriel",
+        "usuarioRespuesta": "Isabel"
+    },
+    {
+        "id": 20,
+        "pregunta": "¿Ofrecen tours para personas mayores?",
+        "respuesta": "Sí, contamos con paquetes especialmente diseñados para personas mayores con actividades adaptadas.",
+        "usuarioPregunta": "Diana",
+        "usuarioRespuesta": "Raúl"
+    },
+    {
+        "id": 21,
+        "pregunta": "¿Hay paquetes exclusivos para lunas de miel?",
+        "respuesta": "Sí, ofrecemos paquetes exclusivos para parejas en su luna de miel.",
+        "usuarioPregunta": "Iván",
+        "usuarioRespuesta": "Claudia"
+    },
+    {
+        "id": 22,
+        "pregunta": "¿Se pueden incluir guías turísticos en los paquetes?",
+        "respuesta": "Sí, puedes añadir guías turísticos en varios destinos.",
+        "usuarioPregunta": "Sara",
+        "usuarioRespuesta": "Javier"
+    },
+    {
+        "id": 23,
+        "pregunta": "¿Qué tipo de alojamientos incluyen los paquetes?",
+        "respuesta": "Ofrecemos alojamientos que van desde hoteles económicos hasta resorts de lujo.",
+        "usuarioPregunta": "Lucía",
+        "usuarioRespuesta": "Mario"
+    },
+    {
+        "id": 24,
+        "pregunta": "¿Hay descuentos para estudiantes?",
+        "respuesta": "Sí, ofrecemos descuentos especiales para estudiantes con identificación válida.",
+        "usuarioPregunta": "Marta",
+        "usuarioRespuesta": "Fernando"
+    },
+    {
+        "id": 25,
+        "pregunta": "¿Puedo elegir los horarios de vuelo?",
+        "respuesta": "Hacemos lo posible por adaptarnos a los horarios que prefieras, sujeto a disponibilidad.",
+        "usuarioPregunta": "Óscar",
+        "usuarioRespuesta": "Laura"
+    },
+    {
+        "id": 26,
+        "pregunta": "¿Ofrecen asistencia en caso de emergencia médica durante el viaje?",
+        "respuesta": "Sí, contamos con seguros de viaje que cubren emergencias médicas.",
+        "usuarioPregunta": "Carlos",
+        "usuarioRespuesta": "Sofía"
+    },
+    {
+        "id": 27,
+        "pregunta": "¿Cómo sé si necesito un visado para mi destino?",
+        "respuesta": "Nuestro equipo te informará si necesitas visado y cómo tramitarlo.",
+        "usuarioPregunta": "Julia",
+        "usuarioRespuesta": "Luis"
+    },
+    {
+        "id": 28,
+        "pregunta": "¿Qué opciones de transporte incluyen los paquetes?",
+        "respuesta": "Ofrecemos transporte terrestre, aéreo y marítimo dependiendo del paquete.",
+        "usuarioPregunta": "Diana",
+        "usuarioRespuesta": "Sergio"
+    },
+    {
+        "id": 29,
+        "pregunta": "¿Hay promociones por reservar con anticipación?",
+        "respuesta": "Sí, ofrecemos descuentos especiales por reservas realizadas con más de 6 meses de anticipación.",
+        "usuarioPregunta": "Luis",
+        "usuarioRespuesta": "Carmen"
+    },
+    {
+        "id": 30,
+        "pregunta": "¿Qué medidas de seguridad tienen en destinos internacionales?",
+        "respuesta": "Trabajamos con proveedores certificados y brindamos asistencia durante todo el viaje.",
+        "usuarioPregunta": "Gabriel",
+        "usuarioRespuesta": "Raúl"
+    }
+]

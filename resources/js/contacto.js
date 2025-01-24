@@ -6,6 +6,8 @@ import { resources } from '../js/traductions.js'
 
 import '../../node_modules/i18next/dist/umd/i18next.min.js'
 
+import '../js/datatable.js'
+
 // Espera a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Recogemos el idioma guardado en el localStorage del navegador

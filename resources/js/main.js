@@ -8,7 +8,7 @@ import { resources } from '../js/traductions.js'
 
 import '../../node_modules/i18next/dist/umd/i18next.min.js'
 
-import '../js/destinos.js'
+import { cargarDestinos } from '../js/destinos.js'
 
 // Espera a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,13 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
     resources, // Idioma por defecto
     debug: false // Ponlo en true para debug
   }).then(() => {
-    // 3. Función para actualizar textos al DOM
-    updateContent()
+    // 3. Cargamos e imprimimos los destinos después de la inicialización
+    cargarDestinos().then(() => {
+    // 4. Actualizamos el contenido traducido
+      updateContent()
 
-    // Mostramos el HTML ahora que la traducción está lista
+      // Mostramos el HTML ahora que la traducción está lista
+    })
     document.documentElement.style.display = 'block'
   })
-
   // Actualiza todos los elementos con data-i18n
   function updateContent () {
     document.querySelectorAll('[data-i18n]').forEach((element) => {
