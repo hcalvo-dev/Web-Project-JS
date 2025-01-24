@@ -3,210 +3,270 @@
         "id": 1,
         "pregunta": "¿Qué servicios ofrece la agencia?",
         "respuesta": "Organizamos viajes personalizados, tours en grupo, paquetes de luna de miel y viajes de aventura.",
-        "usuarioPregunta": "Carlos",
-        "usuarioRespuesta": "Sofía"
+        "usuarioPregunta": "Carlos_89",
+        "usuarioRespuesta": "Sofia_cs",
+        "contact_faq_pregunta":"contact_faq_1q",
+        "contact_faq_respuesta":"contact_faq_1a"
     },
     {
         "id": 2,
         "pregunta": "¿Se pueden modificar los itinerarios?",
         "respuesta": "Sí, nuestros paquetes son flexibles y podemos adaptarlos a tus necesidades y preferencias.",
-        "usuarioPregunta": "María",
-        "usuarioRespuesta": "Luis"
+        "usuarioPregunta": "Maria_rg",
+        "usuarioRespuesta": "Luis_07",
+        "contact_faq_pregunta":"contact_faq_2q",
+        "contact_faq_respuesta":"contact_faq_2a"
     },
     {
         "id": 3,
         "pregunta": "¿Ofrecen asistencia durante el viaje?",
         "respuesta": "Contamos con asistencia 24/7 a través de nuestro servicio de atención al cliente.",
-        "usuarioPregunta": "Jorge",
-        "usuarioRespuesta": "Elena"
+        "usuarioPregunta": "Jorge_TA",
+        "usuarioRespuesta": "Elena_25",
+        "contact_faq_pregunta":"contact_faq_3q",
+        "contact_faq_respuesta":"contact_faq_3a"
     },
     {
         "id": 4,
         "pregunta": "¿Cómo puedo realizar una reserva?",
         "respuesta": "Puedes reservar a través de nuestra web, llamando al teléfono de atención o visitándonos en nuestras oficinas.",
-        "usuarioPregunta": "Ana",
-        "usuarioRespuesta": "Fernando"
+        "usuarioPregunta": "Ana_03",
+        "usuarioRespuesta": "Paco_vj",
+        "contact_faq_pregunta":"contact_faq_4q",
+        "contact_faq_respuesta":"contact_faq_4a"
     },
     {
         "id": 5,
         "pregunta": "¿Qué métodos de pago aceptan?",
         "respuesta": "Aceptamos pagos con tarjeta de crédito/débito, transferencias bancarias y PayPal.",
-        "usuarioPregunta": "Luis",
-        "usuarioRespuesta": "Isabel"
+        "usuarioPregunta": "Luis_GP",
+        "usuarioRespuesta": "Isabel_45",
+        "contact_faq_pregunta":"contact_faq_5q",
+        "contact_faq_respuesta":"contact_faq_5a"
     },
     {
         "id": 6,
         "pregunta": "¿Tienen opciones para viajes de aventura?",
         "respuesta": "Sí, ofrecemos paquetes de aventura que incluyen actividades como senderismo, buceo y safaris.",
-        "usuarioPregunta": "Diana",
-        "usuarioRespuesta": "Raúl"
+        "usuarioPregunta": "Diana_77",
+        "usuarioRespuesta": "Raul_mz",
+        "contact_faq_pregunta":"contact_faq_6q",
+        "contact_faq_respuesta":"contact_faq_6a"
     },
     {
         "id": 7,
         "pregunta": "¿Qué destinos son los más populares?",
         "respuesta": "Nuestros destinos más solicitados son Maldivas, Tailandia, Italia y Costa Rica.",
-        "usuarioPregunta": "Gabriel",
-        "usuarioRespuesta": "Laura"
+        "usuarioPregunta": "Gabriel_pl",
+        "usuarioRespuesta": "Laura_92",
+        "contact_faq_pregunta":"contact_faq_7q",
+        "contact_faq_respuesta":"contact_faq_7a"
     },
     {
         "id": 8,
         "pregunta": "¿Qué documentación necesito para viajar?",
         "respuesta": "Dependiendo del destino, necesitarás tu pasaporte, visado y otros documentos que nuestro equipo te ayudará a gestionar.",
-        "usuarioPregunta": "Marta",
-        "usuarioRespuesta": "Sergio"
+        "usuarioPregunta": "Marta_J2",
+        "usuarioRespuesta": "Sergio_lt",
+        "contact_faq_pregunta":"contact_faq_8q",
+        "contact_faq_respuesta":"contact_faq_8a"
     },
     {
         "id": 9,
         "pregunta": "¿Ofrecen descuentos para grupos grandes?",
         "respuesta": "Sí, contamos con descuentos especiales para grupos de más de 10 personas.",
-        "usuarioPregunta": "Andrés",
-        "usuarioRespuesta": "Carmen"
+        "usuarioPregunta": "Andres_KL",
+        "usuarioRespuesta": "Carmen_02",
+        "contact_faq_pregunta":"contact_faq_9q",
+        "contact_faq_respuesta":"contact_faq_9a"
     },
     {
         "id": 10,
         "pregunta": "¿Se puede cambiar la fecha de un viaje reservado?",
         "respuesta": "Sí, puedes cambiar la fecha sujeto a disponibilidad y a nuestras políticas de modificación.",
-        "usuarioPregunta": "Lucía",
-        "usuarioRespuesta": "Mario"
+        "usuarioPregunta": "Lucia_F9",
+        "usuarioRespuesta": "Mario_cs",
+        "contact_faq_pregunta":"contact_faq_10q",
+        "contact_faq_respuesta":"contact_faq_10a"
     },
     {
         "id": 11,
         "pregunta": "¿Incluyen seguro de viaje en los paquetes?",
         "respuesta": "Ofrecemos seguros de viaje opcionales que puedes añadir a tu paquete.",
-        "usuarioPregunta": "Sara",
-        "usuarioRespuesta": "Javier"
+        "usuarioPregunta": "Sara_45",
+        "usuarioRespuesta": "Javier_kl",
+        "contact_faq_pregunta":"contact_faq_11q",
+        "contact_faq_respuesta":"contact_faq_11a"
     },
     {
         "id": 12,
         "pregunta": "¿Qué sucede si necesito cancelar mi viaje?",
         "respuesta": "Aplica nuestra política de cancelación, que incluye reembolsos según el tiempo de anticipación.",
-        "usuarioPregunta": "Iván",
-        "usuarioRespuesta": "Claudia"
+        "usuarioPregunta": "Ivan_tr",
+        "usuarioRespuesta": "Claudia_17",
+        "contact_faq_pregunta":"contact_faq_12q",
+        "contact_faq_respuesta":"contact_faq_12a"
     },
     {
         "id": 13,
         "pregunta": "¿Hay paquetes familiares disponibles?",
         "respuesta": "Sí, tenemos paquetes especialmente diseñados para familias con actividades para todas las edades.",
-        "usuarioPregunta": "Carmen",
-        "usuarioRespuesta": "Jorge"
+        "usuarioPregunta": "Carmen_LM",
+        "usuarioRespuesta": "Jorge_88",
+        "contact_faq_pregunta":"contact_faq_13q",
+        "contact_faq_respuesta":"contact_faq_13a"
     },
     {
         "id": 14,
         "pregunta": "¿Se pueden reservar vuelos a través de su agencia?",
         "respuesta": "Sí, ofrecemos reserva de vuelos junto con los paquetes o como servicio independiente.",
-        "usuarioPregunta": "Óscar",
-        "usuarioRespuesta": "María"
+        "usuarioPregunta": "Oscar_rt",
+        "usuarioRespuesta": "Maria_21",
+        "contact_faq_pregunta":"contact_faq_14q",
+        "contact_faq_respuesta":"contact_faq_14a"
     },
     {
         "id": 15,
         "pregunta": "¿Qué sucede si pierdo mi vuelo?",
         "respuesta": "Nuestro equipo de asistencia te ayudará a gestionar un vuelo alternativo según las políticas de la aerolínea.",
-        "usuarioPregunta": "Julia",
-        "usuarioRespuesta": "Sofía"
+        "usuarioPregunta": "Julia_mq",
+        "usuarioRespuesta": "Sofia_30",
+        "contact_faq_pregunta":"contact_faq_15q",
+        "contact_faq_respuesta":"contact_faq_15a"
     },
     {
         "id": 16,
         "pregunta": "¿Ofrecen paquetes todo incluido?",
         "respuesta": "Sí, contamos con paquetes todo incluido que cubren transporte, alojamiento y actividades.",
-        "usuarioPregunta": "Carlos",
-        "usuarioRespuesta": "Elena"
+        "usuarioPregunta": "Carlos_MR",
+        "usuarioRespuesta": "Elena_pq",
+        "contact_faq_pregunta":"contact_faq_16q",
+        "contact_faq_respuesta":"contact_faq_16a"
     },
     {
         "id": 17,
         "pregunta": "¿Puedo pagar en cuotas?",
         "respuesta": "Sí, ofrecemos planes de pago en cuotas con ciertas condiciones.",
-        "usuarioPregunta": "Ana",
-        "usuarioRespuesta": "Fernando"
+        "usuarioPregunta": "Ana_92",
+        "usuarioRespuesta": "Fernando_xc",
+        "contact_faq_pregunta":"contact_faq_17q",
+        "contact_faq_respuesta":"contact_faq_17a"
     },
     {
         "id": 18,
         "pregunta": "¿Qué actividades ofrecen en destinos de playa?",
         "respuesta": "Incluimos actividades como snorkel, paseos en bote y deportes acuáticos.",
-        "usuarioPregunta": "Luis",
-        "usuarioRespuesta": "Laura"
+        "usuarioPregunta": "Luis_09",
+        "usuarioRespuesta": "Laura_rt",
+        "contact_faq_pregunta":"contact_faq_18q",
+        "contact_faq_respuesta":"contact_faq_18a"
     },
     {
         "id": 19,
         "pregunta": "¿Es posible incluir transporte desde mi casa al aeropuerto?",
         "respuesta": "Sí, podemos gestionar transporte privado desde tu domicilio al aeropuerto.",
-        "usuarioPregunta": "Gabriel",
-        "usuarioRespuesta": "Isabel"
+        "usuarioPregunta": "Gabriel_xc",
+        "usuarioRespuesta": "Isabel_34",
+        "contact_faq_pregunta":"contact_faq_19q",
+        "contact_faq_respuesta":"contact_faq_19a"
     },
     {
         "id": 20,
         "pregunta": "¿Ofrecen tours para personas mayores?",
         "respuesta": "Sí, contamos con paquetes especialmente diseñados para personas mayores con actividades adaptadas.",
-        "usuarioPregunta": "Diana",
-        "usuarioRespuesta": "Raúl"
+        "usuarioPregunta": "Diana_PL",
+        "usuarioRespuesta": "Raul_kj",
+        "contact_faq_pregunta":"contact_faq_20q",
+        "contact_faq_respuesta":"contact_faq_20a"
     },
     {
         "id": 21,
         "pregunta": "¿Hay paquetes exclusivos para lunas de miel?",
         "respuesta": "Sí, ofrecemos paquetes exclusivos para parejas en su luna de miel.",
-        "usuarioPregunta": "Iván",
-        "usuarioRespuesta": "Claudia"
+        "usuarioPregunta": "Ivan_23",
+        "usuarioRespuesta": "Claudia_LP",
+        "contact_faq_pregunta":"contact_faq_21q",
+        "contact_faq_respuesta":"contact_faq_21a"
     },
     {
         "id": 22,
         "pregunta": "¿Se pueden incluir guías turísticos en los paquetes?",
         "respuesta": "Sí, puedes añadir guías turísticos en varios destinos.",
-        "usuarioPregunta": "Sara",
-        "usuarioRespuesta": "Javier"
+        "usuarioPregunta": "Sara_34",
+        "usuarioRespuesta": "Javier_tr",
+        "contact_faq_pregunta":"contact_faq_22q",
+        "contact_faq_respuesta":"contact_faq_22a"
     },
     {
         "id": 23,
         "pregunta": "¿Qué tipo de alojamientos incluyen los paquetes?",
         "respuesta": "Ofrecemos alojamientos que van desde hoteles económicos hasta resorts de lujo.",
-        "usuarioPregunta": "Lucía",
-        "usuarioRespuesta": "Mario"
+        "usuarioPregunta": "Lucia_MQ",
+        "usuarioRespuesta": "Mario_05",
+        "contact_faq_pregunta":"contact_faq_23q",
+        "contact_faq_respuesta":"contact_faq_23a"
     },
     {
         "id": 24,
         "pregunta": "¿Hay descuentos para estudiantes?",
         "respuesta": "Sí, ofrecemos descuentos especiales para estudiantes con identificación válida.",
-        "usuarioPregunta": "Marta",
-        "usuarioRespuesta": "Fernando"
+        "usuarioPregunta": "Marta_19",
+        "usuarioRespuesta": "Fernando_RQ",
+        "contact_faq_pregunta":"contact_faq_24q",
+        "contact_faq_respuesta":"contact_faq_24a"
     },
     {
         "id": 25,
         "pregunta": "¿Puedo elegir los horarios de vuelo?",
         "respuesta": "Hacemos lo posible por adaptarnos a los horarios que prefieras, sujeto a disponibilidad.",
-        "usuarioPregunta": "Óscar",
-        "usuarioRespuesta": "Laura"
+        "usuarioPregunta": "Oscar_CS",
+        "usuarioRespuesta": "Laura_72",
+        "contact_faq_pregunta":"contact_faq_25q",
+        "contact_faq_respuesta":"contact_faq_25a"
     },
     {
         "id": 26,
         "pregunta": "¿Ofrecen asistencia en caso de emergencia médica durante el viaje?",
         "respuesta": "Sí, contamos con seguros de viaje que cubren emergencias médicas.",
-        "usuarioPregunta": "Carlos",
-        "usuarioRespuesta": "Sofía"
+        "usuarioPregunta": "Carlos_LP",
+        "usuarioRespuesta": "Sofia_94",
+        "contact_faq_pregunta":"contact_faq_26q",
+        "contact_faq_respuesta":"contact_faq_26a"
     },
     {
         "id": 27,
         "pregunta": "¿Cómo sé si necesito un visado para mi destino?",
         "respuesta": "Nuestro equipo te informará si necesitas visado y cómo tramitarlo.",
-        "usuarioPregunta": "Julia",
-        "usuarioRespuesta": "Luis"
+        "usuarioPregunta": "Julia_HR",
+        "usuarioRespuesta": "Luis_87",
+        "contact_faq_pregunta":"contact_faq_27q",
+        "contact_faq_respuesta":"contact_faq_27a"
     },
     {
         "id": 28,
         "pregunta": "¿Qué opciones de transporte incluyen los paquetes?",
         "respuesta": "Ofrecemos transporte terrestre, aéreo y marítimo dependiendo del paquete.",
-        "usuarioPregunta": "Diana",
-        "usuarioRespuesta": "Sergio"
+        "usuarioPregunta": "Diana_54",
+        "usuarioRespuesta": "Sergio_NL",
+        "contact_faq_pregunta":"contact_faq_28q",
+        "contact_faq_respuesta":"contact_faq_28a"
     },
     {
         "id": 29,
         "pregunta": "¿Hay promociones por reservar con anticipación?",
         "respuesta": "Sí, ofrecemos descuentos especiales por reservas realizadas con más de 6 meses de anticipación.",
-        "usuarioPregunta": "Luis",
-        "usuarioRespuesta": "Carmen"
+        "usuarioPregunta": "Luis_VJ",
+        "usuarioRespuesta": "Carmen_LM",
+        "contact_faq_pregunta":"contact_faq_29q",
+        "contact_faq_respuesta":"contact_faq_29a"
     },
     {
         "id": 30,
         "pregunta": "¿Qué medidas de seguridad tienen en destinos internacionales?",
         "respuesta": "Trabajamos con proveedores certificados y brindamos asistencia durante todo el viaje.",
-        "usuarioPregunta": "Gabriel",
-        "usuarioRespuesta": "Raúl"
+        "usuarioPregunta": "Gabriel_FK",
+        "usuarioRespuesta": "Raul_JG",
+        "contact_faq_pregunta":"contact_faq_30q",
+        "contact_faq_respuesta":"contact_faq_30a"
     }
 ]

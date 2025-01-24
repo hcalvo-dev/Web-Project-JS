@@ -6,7 +6,7 @@ import { resources } from '../js/traductions.js'
 
 import '../../node_modules/i18next/dist/umd/i18next.min.js'
 
-import '../js/datatable.js'
+import { cargarPreguntas } from '../js/datatable.js'
 
 // Espera a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,9 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
     resources, // Idioma por defecto
     debug: false // Ponlo en true para debug
   }).then(() => {
-    // 3. Llamamos a la función que actualiza el contenido inicial
-    updateContent()
+    cargarPreguntas().then(() => {
+      // 4. Actualizamos el contenido traducido
+      updateContent()
 
+      // Mostramos el HTML ahora que la traducción está lista
+    })
     // Mostramos el HTML ahora que la traducción está lista
     document.documentElement.style.display = 'block'
   })
@@ -59,6 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Actualizamos el contenido
         updateContent()
+
+        cargarPreguntas()
       })
     })
   })
