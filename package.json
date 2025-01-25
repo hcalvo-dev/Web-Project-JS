@@ -30,10 +30,11 @@
     "extends": "standard"
   },
   "dependencies": {
-    "datatables.net-dt": "^2.2.1",
+    "datatables.net-dt": "2.2.1",
     "i18n": "0.15.1",
     "i18next": "24.2.1",
     "jquery": "3.7.1",
+    "jquery-validation": "1.21.0",
     "node-localstorage": "3.0.5"
   }
 }

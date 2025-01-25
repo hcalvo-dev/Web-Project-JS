@@ -2,7 +2,7 @@ import '../../node_modules/jquery/dist/jquery.min.js'
 
 let resizeTimeout
 
-function updateCarousel () {
+export function updateCarousel () {
   // Obtener el ancho de la ventana
   const windowWidth = $(window).width()
   const multipleItemCarousel = document.querySelector('#carouselExampleCaptions')
@@ -62,5 +62,3 @@ $(window).resize(function () {
 $(document).ready(function () {
   updateCarousel()
 })
-
-export { updateCarousel }

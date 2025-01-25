@@ -6,8 +6,6 @@ import { resources } from '../js/traductions.js'
 
 import '../../node_modules/i18next/dist/umd/i18next.min.js'
 
-import { cargarPreguntas } from '../js/datatable.js'
-
 import '../js/form_validator_jquery.js'
 
 // Espera a que el DOM esté completamente cargado
@@ -21,12 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     resources, // Idioma por defecto
     debug: false // Ponlo en true para debug
   }).then(() => {
-    cargarPreguntas().then(() => {
-      // 4. Actualizamos el contenido traducido
-      updateContent()
+    updateContent()
 
-      // Mostramos el HTML ahora que la traducción está lista
-    })
     // Mostramos el HTML ahora que la traducción está lista
     document.documentElement.style.display = 'block'
   })
@@ -69,8 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Actualizamos el contenido
         updateContent()
-
-        cargarPreguntas()
       })
     })
   })

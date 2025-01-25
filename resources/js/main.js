@@ -1,7 +1,3 @@
-import '../js/carousel.js'
-
-import '../../bootstrap/js/bootstrap.bundle.min.js'
-
 import '../js/scroll.js'
 
 import { resources } from '../js/traductions.js'
@@ -9,6 +5,10 @@ import { resources } from '../js/traductions.js'
 import '../../node_modules/i18next/dist/umd/i18next.min.js'
 
 import { cargarDestinos } from '../js/destinos.js'
+
+import '../../bootstrap/js/bootstrap.bundle.min.js'
+
+import { updateCarousel } from '../js/carousel.js'
 
 // Espera a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cargarDestinos().then(() => {
     // 4. Actualizamos el contenido traducido
       updateContent()
+      updateCarousel()
 
       // Mostramos el HTML ahora que la traducción está lista
     })
@@ -36,6 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const key = element.getAttribute('data-i18n')
       const translatedText = i18next.t(key)
       // Permite HTML en la traducción (por ejemplo <br>)
+      if (element.tagName === 'INPUT' && element.type === 'search') {
+        element.setAttribute('placeholder', translatedText)
+      }
       element.innerHTML = translatedText
     })
 
@@ -70,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           // Actualizamos el contenido
           updateContent()
+          updateCarousel()
         }).catch(err => {
           console.error('Error cambiando el idioma:', err)
         })

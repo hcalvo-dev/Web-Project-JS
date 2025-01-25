@@ -6,10 +6,6 @@ import { resources } from '../js/traductions.js'
 
 import '../../node_modules/i18next/dist/umd/i18next.min.js'
 
-import { cargarPreguntas } from '../js/datatable.js'
-
-import '../js/form_validator_jquery.js'
-
 // Espera a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Recogemos el idioma guardado en el localStorage del navegador
@@ -21,12 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     resources, // Idioma por defecto
     debug: false // Ponlo en true para debug
   }).then(() => {
-    cargarPreguntas().then(() => {
-      // 4. Actualizamos el contenido traducido
-      updateContent()
+    // 4. Actualizamos el contenido traducido
+    updateContent()
 
-      // Mostramos el HTML ahora que la traducción está lista
-    })
     // Mostramos el HTML ahora que la traducción está lista
     document.documentElement.style.display = 'block'
   })
@@ -35,11 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateContent () {
     document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n')
-      const translatedText = i18next.t(key)
-
-      if (element.tagName === 'INPUT' && (element.type === 'text' || element.type === 'search' || element.type === 'email')) {
-        element.setAttribute('placeholder', translatedText)
-      }
       element.innerHTML = i18next.t(key)
     })
 
@@ -69,8 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Actualizamos el contenido
         updateContent()
-
-        cargarPreguntas()
       })
     })
   })

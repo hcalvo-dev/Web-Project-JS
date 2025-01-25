@@ -6,9 +6,10 @@ export const resources = {
       // Barra de navegación
       brandName: 'WorldTravel',
       nav_home: 'Inicio',
-      nav_sobreMi: 'Sobre mí',
+      nav_destino: 'Destino',
       nav_contacto: 'Contacto',
       btn_login: 'Login',
+      nav_search: 'Buscar...',
 
       // -- Home --
       home_titulo: 'VIAJES EXÓTICOS',
@@ -79,15 +80,18 @@ export const resources = {
       contact_titulo: 'Contáctanos',
       contact_form_titulo: 'Formulario de Contacto',
 
-      contact_orm_labelNombre: 'Nombre',
+      contact_form_labelNombre: 'Nombre',
+      contact_form_name: 'Tu nombre',
       contact_form_helpNombre: 'Introduce tu nombre completo.',
       contact_form_errorNombre: 'El nombre es obligatorio.',
 
       contact_form_labelEmail: 'Correo Electrónico',
+      contact_form_email: 'tucorreo@email.com',
       contact_form_helpEmail: 'Introduce una dirección de correo válida.',
       contact_form_errorEmail: 'El correo electrónico es obligatorio y debe ser válido.',
 
       contact_form_labelMensaje: 'Mensaje',
+      contact_form_message: 'Escribe tu mensaje',
       contact_form_helpMensaje: 'Incluye los detalles de tu consulta o mensaje.',
       contact_form_errorMensaje: 'El mensaje no puede estar vacío.',
 
@@ -193,9 +197,10 @@ export const resources = {
       // -- NAVIGATION BAR --
       brandName: 'WorldTravel',
       nav_home: 'Home',
-      nav_sobreMi: 'About Me',
+      nav_destino: 'Destinations',
       nav_contacto: 'Contact',
       btn_login: 'Login',
+      nav_search: 'Search...',
 
       // -- HOME --
       home_titulo: 'EXOTIC TRIPS',
@@ -267,14 +272,17 @@ export const resources = {
       contact_form_titulo: 'Contact Form',
 
       contact_form_labelNombre: 'Name',
+      contact_form_name: 'Your name',
       contact_form_helpNombre: 'Enter your full name.',
       contact_form_errorNombre: 'Name is required.',
 
       contact_form_labelEmail: 'Email',
+      contact_form_email: 'youremail@email.com',
       contact_form_helpEmail: 'Enter a valid email address.',
       contact_form_errorEmail: 'A valid email is required.',
 
       contact_form_labelMensaje: 'Message',
+      contact_form_message: 'Write your message',
       contact_form_helpMensaje: 'Include the details of your query or message.',
       contact_form_errorMensaje: 'Message cannot be empty.',
 

@@ -12,7 +12,6 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="../styles/css/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
 
-
     <!-- Favicon -->
     <link rel="icon" href="../resources/logos/logo_web.png" type="image/x-icon">
 
@@ -75,8 +74,8 @@
                                         aria-label="Ir a la página de inicio" data-i18n="nav_home">Inicio</a>
                                 </li>
                                 <li class="nav-item me-1">
-                                    <a href="../pages/about.html" class="nav-link px-2 text-black" aria-label="Sobre mí"
-                                        data-i18n="nav_sobreMi">Sobre mí</a>
+                                    <a href="../pages/destinos.html" class="nav-link px-2 text-black" aria-label="Destinos"
+                                        data-i18n="nav_destino">Destinos</a>
                                 </li>
                                 <li class="nav-item me-1">
                                     <a href="../pages/contacto.html" class="nav-link active px-2 text-black"
@@ -91,7 +90,7 @@
                         <!-- Buscador -->
                         <form class="d-flex search-form" role="search">
                             <input type="search" class="form-control search-input" placeholder="Buscar..."
-                                aria-label="Buscar en el sitio">
+                                data-i18n="nav_search" aria-label="Buscar en el sitio">
                             <button class="btn search-btn" type="submit" aria-label="Buscar">
                                 <i class="bi bi-search" aria-hidden="true"></i>
                             </button>
@@ -175,47 +174,30 @@
                         <span data-i18n="contact_titulo">Contáctanos</span>
                     </h2>
                 </div>
-                <form class="p-3 border border-primary rounded shadow needs-validation" novalidate>
-                    <h2 id="contact-form-title" class="mb-4" data-i18n="contact_form_titulo">Formulario de Contacto</h2>
+                <form class="p-3 border border-primary rounded shadow" id="contact-form" novalidate>
 
                     <!-- Campo Nombre -->
                     <div class="mb-3">
-                        <label for="name" class="form-label" data-i18n="contact_form_labelNombre">Nombre</label>
-                        <input type="text" class="form-control" id="name" placeholder="Tu nombre" required
-                            aria-required="true" aria-describedby="name-help">
-                        <div id="name-help" class="form-text" data-i18n="contact_form_helpNombre">
-                            Introduce tu nombre completo.
-                        </div>
-                        <div class="invalid-feedback" data-i18n="contact_form_errorNombre">
-                            El nombre es obligatorio.
-                        </div>
+                        <label id="name-label" for="name" class="form-label"
+                            data-i18n="contact_form_labelNombre">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Tu nombre" name="name"
+                            data-i18n="contact_form_name" required aria-required="true" aria-describedby="name-help">
                     </div>
 
                     <!-- Campo Correo Electrónico -->
                     <div class="mb-3">
-                        <label for="email" class="form-label" data-i18n="contact_form_labelEmail">Correo
-                            Electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="tucorreo@email.com" required
-                            aria-required="true" aria-describedby="email-help">
-                        <div id="email-help" class="form-text" data-i18n="contact_form_helpEmail">
-                            Introduce una dirección de correo válida.
-                        </div>
-                        <div class="invalid-feedback" data-i18n="contact_form_errorEmail">
-                            El correo electrónico es obligatorio y debe ser válido.
-                        </div>
+                        <label id="email-label" for="email" class="form-label"
+                            data-i18n="contact_form_labelEmail">Correo Electrónico</label>
+                        <input type="text" class="form-control" id="email" placeholder="tucorreo@email.com" name="email"
+                            data-i18n="contact_form_email" required aria-required="true" aria-describedby="email-help">
                     </div>
 
                     <!-- Campo Mensaje -->
                     <div class="mb-3">
                         <label for="message" class="form-label" data-i18n="contact_form_labelMensaje">Mensaje</label>
-                        <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje" required
-                            aria-required="true" aria-describedby="message-help"></textarea>
-                        <div id="message-help" class="form-text" data-i18n="contact_form_helpMensaje">
-                            Incluye los detalles de tu consulta o mensaje.
-                        </div>
-                        <div class="invalid-feedback" data-i18n="contact_form_errorMensaje">
-                            El mensaje no puede estar vacío.
-                        </div>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje"
+                            name="message" data-i18n="contact_form_message" required aria-required="true"
+                            aria-describedby="message-help"></textarea>
                     </div>
 
                     <!-- Botón Enviar -->
@@ -261,7 +243,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                       
+
                     </tbody>
                 </table>
             </div>
@@ -323,31 +305,31 @@
                     <div class="col-8">
                         <ul class="list-inline mb-0">
                             <li class="list-inline-item link-footer">
-                                <a href="/aviso_legal.html" class="py-2 text-light text-decoration-none"
+                                <a href="aviso_legal.html" class="py-2 text-light text-decoration-none"
                                     aria-label="Aviso legal" data-i18n="footer_avisoLegal">
                                     Aviso legal
                                 </a>
                             </li>
                             <li class="list-inline-item link-footer">
-                                <a href="/aviso_legal.html" class="py-2 text-light text-decoration-none"
+                                <a href="aviso_legal.html" class="py-2 text-light text-decoration-none"
                                     aria-label="Condiciones Generales" data-i18n="footer_condiciones">
                                     Condiciones Generales
                                 </a>
                             </li>
                             <li class="list-inline-item link-footer">
-                                <a href="/aviso_legal.html" class="py-2 text-light text-decoration-none"
+                                <a href="aviso_legal.html" class="py-2 text-light text-decoration-none"
                                     aria-label="Política de Privacidad" data-i18n="footer_privacidad">
                                     Política de Privacidad
                                 </a>
                             </li>
                             <li class="list-inline-item link-footer">
-                                <a href="/aviso_legal.html" class="py-2 text-light text-decoration-none"
+                                <a href="aviso_legal.html" class="py-2 text-light text-decoration-none"
                                     aria-label="Política de Cookies" data-i18n="footer_cookies">
                                     Política de Cookies
                                 </a>
                             </li>
                             <li class="list-inline-item link-footer">
-                                <a href="/aviso_legal.html" class="py-2 text-light text-decoration-none"
+                                <a href="aviso_legal.html" class="py-2 text-light text-decoration-none"
                                     aria-label="Media Kit" data-i18n="footer_mediakit">
                                     Media Kit
                                 </a>
