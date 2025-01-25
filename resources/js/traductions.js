@@ -165,7 +165,63 @@ export const resources = {
       contact_faq_30q: '¿Qué medidas de seguridad tienen en destinos internacionales?',
       contact_faq_30a: 'Trabajamos con proveedores certificados y brindamos asistencia durante todo el viaje.',
 
-      // -- SOBRE MI --
+      // -- DESTINOS --
+
+      // Main Content
+      main_title: 'Explora el Mundo',
+      main_subtitle: 'Descubre destinos únicos y vive aventuras inolvidables',
+      video_aria_label: 'Video de viajes exóticos mostrando destinos de lujo',
+
+      // Sección Sri Lanka
+      sri_lanka_header: '<strong>Viaje a Sri Lanka</strong></span>',
+      sri_lanka_paragraph1: 'Añade las <span class="text-primary"><strong>excursiones</strong></span> y <span class="text-primary"><strong>experiencias</strong></span> que quieras y elige los <span class="text-primary"><strong>hoteles</strong></span> en cada zona que visites.',
+      sri_lanka_paragraph2: 'Por eso, organizamos todos nuestros tours con disposición de <span class="text-primary"><strong>vehículos climatizados y un chófer privado</strong></span>,',
+      sri_lanka_paragraph3: 'con la mayor comodidad.',
+      sri_lanka_subheader: '<span class="text-primary"><strong>Viajes a medida</strong></span>',
+      sri_lanka_description: 'Sri Lanka es una isla situada en el <span class=\'text-primary\'><strong>Océano Índico</strong></span>, al sureste de la India, con forma de lágrima.',
+      sri_lanka_features1: 'Es famosa por su <span class=\'text-primary\'><strong>clima tropical</strong></span>, su hospitalidad, un rico <span class=\'text-primary\'><strong>patrimonio cultural</strong></span>,',
+      sri_lanka_features2: ', sus <span class=\'text-primary\'><strong>playas</strong></span> de palmeras y aguas cálidas y, muy especialmente,</br> por su <span class=\'text-primary\'><strong>exuberante naturaleza</strong></span>.',
+      sri_lanka_price: '<span class="text-primary"><strong> Precio : 2.280€ </strong></span>',
+      sri_lanka_button: 'Añadir al carrito',
+      sri_lanka_image_alt: 'Elefantes cruzando por un rio de Sri Lanka',
+
+      // Sección Dubái
+      dubai_header: '<strong>Viaje a Dubái</strong></span>',
+      dubai_paragraph1: 'Alojate en el maravilloso <span class=\'text-primary\'><strong>Pullman Dubai Downtown 5*</strong></span> con una excelente ubicación en la <span class=\'text-primary\'><strong>Business Bay de Dubái muy cerca del iconico Burj Khalifa.</strong></span>',
+      dubai_paragraph2: 'Disfruta de emocionantes <span class=\'text-primary\'><strong>excursiónes en 4x4 por las dunas del desierto de Dubái</strong></span>',
+      dubai_paragraph3: ' o sumergete en el agua para hacer <span class=\'text-primary\'><strong>Snorkel</strong></span>.',
+      dubai_subheader: '<span class="text-primary"><strong>Visita lugares Increibles</strong></span>',
+      dubai_description: 'Dubái es una ciudad emblemática en los <span class=\'text-primary\'><strong>Emiratos Árabes Unidos</strong></span>, <br />conocida por su modernidad y lujo.',
+      dubai_features1: 'Es famosa por su <span class=\'text-primary\'><strong>arquitectura vanguardista</strong></span>, su deslumbrante <span class=\'text-primary\'><strong>vida nocturna</strong></span>,',
+      dubai_features2: ' sus <span class=\'text-primary\'><strong>playas</strong></span> de arena blanca y su impresionante <span class=\'text-primary\'><strong>desierto</strong></span> que ofrece <br /> experiencias únicas como paseos en camello y safaris.',
+      dubai_price: '<span class="text-primary"><strong> Precio : 3.460€ </strong></span>',
+      dubai_button: 'Añadir al carrito',
+      dubai_image_alt: 'La ciudad de Dubái iluminada por la noche',
+
+      // Sección Udaipur
+      udaipur_header: '<span class="text-primary"><strong>Viaje a Golden Triangle & Udaipur</strong></span>',
+      udaipur_paragraph1: 'India es uno de esos <span class=\'text-primary\'><strong>lugares mágicos</strong></span> donde todo el mundo debería ir <span class=\'text-primary\'><strong>una vez en la vida</strong></span>.',
+      udaipur_paragraph2: 'Diseñamos los viajes a India totalmente <span class=\'text-primary\'><strong>personalizados</strong></span>, planificando los itinerarios con las excursiones, experiencias y',
+      udaipur_paragraph3: 'hoteles que quieras incluir. Además, todos nuestros tours en India son <span class=\'text-primary\'><strong>privados y a medida</strong></span>.',
+      udaipur_subheader: '<span class="text-primary"><strong>Viajes a medida</strong></span>',
+      udaipur_description: 'India es un país fascinante situado en el <span class=\'text-primary\'><strong>subcontinente asiático</strong></span>, conocido<br /> por su rica historia y diversidad cultural.',
+      udaipur_features1: 'Es famosa por su <span class=\'text-primary\'><strong>arquitectura antigua</strong></span>, sus <span class=\'text-primary\'><strong>festivales vibrantes</strong></span> y su ',
+      udaipur_features2: '<span class="text-primary"><strong>gastronomía única</strong></span>. Además de sus <span class=\'text-primary\'><strong>templos sagrados</strong></span><br /> y <span class=\'text-primary\'><strong>monumentos emblemáticos</strong></span>.',
+      udaipur_price: '<span class="text-primary"><strong> Precio : 2.560€ </strong></span>',
+      udaipur_button: 'Añadir al carrito',
+      udaipur_image_alt: 'Vista panorámica del Templo akshardham de la India',
+
+      // Sección en Construcción
+      construction_header: '<strong>Próximos Destinos</strong>',
+      construction_spinner: '<span class="visually-hidden">Cargando...</span>',
+      construction_working: 'Estamos trabajando en ello',
+      construction_text: 'Estamos preparando nuevos destinos increíbles para ti. <br />¡Pronto estarán disponibles!',
+      construction_button: 'Explorar otros destinos',
+      construction_alert: '¡No te lo pierdas! Actualizaremos nuestro catalogo en breves.',
+
+      // -- Popover --
+      popover_title: 'Carrito actualizado',
+      popover_content: 'Plan añadido correctamente!',
 
       // -- AVISO LEGAL --
       loading: 'Cargando...',
@@ -356,7 +412,63 @@ export const resources = {
       contact_faq_30q: 'What safety measures are in place for international destinations?',
       contact_faq_30a: 'We work with certified providers and provide support throughout the trip.',
 
-      // -- SOBRE MI --
+      // -- DESTINOS --
+
+      // Main Content
+      main_title: '<strong>Explore the World</strong>',
+      main_subtitle: 'Discover unique destinations and live unforgettable adventures',
+      video_aria_label: 'Exotic travel video showing luxury destinations',
+
+      // Sección Sri Lanka
+      sri_lanka_header: '<strong>Travel to Sri Lanka</strong>',
+      sri_lanka_paragraph1: 'Add the <span class="text-primary"><strong>excursions</strong></span> and <span class="text-primary"><strong>experiences</strong></span> you want and choose the <span class="text-primary"><strong>hotels</strong></span> in each area you visit.',
+      sri_lanka_paragraph2: 'We will take care of the rest.',
+      sri_lanka_paragraph3: 'That is why we organize all our tours with <span class="text-primary"><strong>air-conditioned vehicles and a private driver</strong></span>,',
+      sri_lanka_subheader: '<span class="text-primary"><strong>Tailor-made trips</strong></span>',
+      sri_lanka_description: 'Sri Lanka is an island located in the <span class=\'text-primary\'><strong>Indian Ocean</strong></span>, southeast of India, shaped like a teardrop.',
+      sri_lanka_features1: 'It is famous for its <span class=\'text-primary\'><strong>tropical climate</strong></span>, hospitality, rich <span class=\'text-primary\'><strong>cultural heritage</strong></span>,',
+      sri_lanka_features2: ', its <span class=\'text-primary\'><strong>beaches</strong></span> of palm trees and cool waters and, above all, for its <span class=\'text-primary\'><strong>exuberant nature</strong></span>.',
+      sri_lanka_price: '<span class="text-primary"><strong> Price : 2,280$ </strong></span>',
+      sri_lanka_button: 'Add to cart',
+      sri_lanka_image_alt: 'Elephants crossing a river in Sri Lanka',
+
+      // Sección Dubái
+      dubai_header: '<strong>Travel to Dubai</strong>',
+      dubai_paragraph1: 'Stay at the wonderful <span class=\'text-primary\'><strong>Pullman Dubai Downtown 5*</strong></span> with an excellent location in <span class=\'text-primary\'><strong>Business Bay Dubai very close to the iconic Burj Khalifa.</strong></span>',
+      dubai_paragraph2: 'Enjoy exciting <span class=\'text-primary\'><strong>4x4 excursions through the Dubai desert dunes</strong></span>',
+      dubai_paragraph3: ' or dive into the water for <span class=\'text-primary\'><strong>Snorkeling</strong></span>.',
+      dubai_subheader: '<span class="text-primary"><strong>Visit Incredible Places</strong></span>',
+      dubai_description: 'Dubai is an iconic city in the <span class=\'text-primary\'><strong>United Arab Emirates</strong></span>, known for its modernity and luxury.',
+      dubai_features1: 'It is famous for its <span class=\'text-primary\'><strong>avant-garde architecture</strong></span>, its dazzling <span class=\'text-primary\'><strong>nightlife</strong></span>,',
+      dubai_features2: ' its white sandy <span class=\'text-primary\'><strong>beaches</strong></span> and its impressive <span class=\'text-primary\'><strong>desert</strong></span> that offers <br /> unique experiences like camel rides and safaris.',
+      dubai_price: '<span class="text-primary"><strong> Price : 3,460$ </strong></span>',
+      dubai_button: 'Add to cart',
+      dubai_image_alt: 'Dubai city illuminated at night',
+
+      // Sección Udaipur
+      udaipur_header: '<span class="text-primary"><strong>Travel to Golden Triangle & Udaipur</strong></span>',
+      udaipur_paragraph1: 'India is one of those <span class=\'text-primary\'><strong>magical places</strong></span> where everyone should go <span class=\'text-primary\'><strong>once in a lifetime</strong></span>.',
+      udaipur_paragraph2: 'We design trips to India completely <span class=\'text-primary\'><strong>personalized</strong></span>, planning itineraries with <span class=\'text-primary\'><strong>excursions</strong></span>, <span class=\'text-primary\'><strong>experiences</strong></span>, and',
+      udaipur_paragraph3: '<span class=\'text-primary\'><strong>hotels</strong></span> you want to include. Plus, all our tours in India are <span class=\'text-primary\'><strong>private and tailor-made</strong></span>.',
+      udaipur_subheader: '<span class="text-primary"><strong>Tailor-made trips</strong></span>',
+      udaipur_description: 'India is a fascinating country located in the <span class=\'text-primary\'><strong>Asian subcontinent</strong></span>, known for its rich history and cultural diversity.',
+      udaipur_features1: 'It is famous for its <span class=\'text-primary\'><strong>ancient architecture</strong></span>, its <span class=\'text-primary\'><strong>vibrant festivals</strong></span> and its ',
+      udaipur_features2: '<span class="text-primary"><strong>unique gastronomy</strong></span>. Besides its <span class=\'text-primary\'><strong>sacred temples</strong></span><br /> and <span class=\'text-primary\'><strong>emblematic monuments</strong></span>.',
+      udaipur_price: '<span class="text-primary"><strong> Price : 2,560$ </strong></span>',
+      udaipur_button: 'Add to cart',
+      udaipur_image_alt: 'Panoramic view of the Akshardham Temple in India',
+
+      // Sección en Construcción
+      construction_header: '<strong>Upcoming Destinations</strong>',
+      construction_spinner: '<span class="visually-hidden">Loading...</span>',
+      construction_working: 'We are working on it',
+      construction_text: 'We are preparing new incredible destinations for you. <br />Coming soon!',
+      construction_button: 'Explore other destinations',
+      construction_alert: 'Don\'t miss it! We will update our catalog soon.',
+
+      // -- Popover --
+      popover_title: 'Cart Updated',
+      popover_content: 'Plan added successfully!',
 
       // -- AVISO LEGAL --
       loading: 'Loading...',
