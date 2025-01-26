@@ -229,6 +229,18 @@ export const resources = {
       coming_soon_text: 'Estamos preparando algo increíble para ti. Por favor, vuelve pronto.',
       return_home: 'Volver al inicio',
 
+      // -- LOGIN --
+      login_title: 'Inciar Sesión',
+      login_form_labelPassword: 'Contraseña',
+      login_form_password: 'Tu contraseña',
+      login_button: 'Entrar',
+      login_form_rememberMe: 'Recuerdame',
+      login_form_boton: 'Iniciar sesión',
+      error_message_validationCustomPassword: 'La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, una minúscula, un número y un carácter especial.',
+      error_message_validationCustomEmail: 'Por favor, introduce un correo electrónico válido.',
+      valid_message_validationCustomEmail: 'Correo válido.',
+      valid_message_validationCustomPassword: 'Contraseña válida.',
+
       // -- FOOTER --
       footer_nuestrasOficinas: 'NUESTRAS OFICINAS',
       footer_espana: 'España',
@@ -475,6 +487,17 @@ export const resources = {
       coming_soon: 'We are working on it!',
       coming_soon_text: 'We are preparing something incredible for you. Please come back soon.',
       return_home: 'Back to top',
+
+      // -- LOGIN --
+      login_title: 'Login',
+      login_form_labelPassword: 'Password',
+      login_form_password: 'Your password',
+      login_form_rememberMe: 'Remember me',
+      login_form_boton: 'Login',
+      error_message_validationCustomPassword: 'Password must be at least 8 characters long, including an uppercase, a lowercase, a number, and a special character.',
+      error_message_validationCustomEmail: 'Please enter a valid email address.',
+      valid_message_validationCustomEmail: 'Valid email.',
+      valid_message_validationCustomPassword: 'Valid password.',
 
       // -- FOOTER --
       footer_nuestrasOficinas: 'OUR OFFICES',

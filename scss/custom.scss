@@ -1,11 +1,8 @@
-
-
-
-.search-form{
+.search-form {
     width: 100%;
 }
 
-.search-input{
+.search-input {
     width: 100%;
 }
 
@@ -168,5 +165,67 @@ footer {
         width: 75%;
     }
 }
+
+/* Estilo para los campos con error */
+.error-border {
+    border: 1px solid #dc3545 !important;
+    /* Rojo */
+    border-radius: 4px;
+    padding-right: 30px;
+    /* Espacio para el ícono */
+    position: relative;
+}
+
+/* Fondo rosado claro */
+.error-border:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.6) !important;
+}
+
+/* Mensaje de error */
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo del ícono de error */
+.error-icon {
+    color: #dc3545;
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+/* Estilo para los campos válidos */
+.valid-border {
+    border: 2px solid #28a745 !important;
+    /* Verde */
+    padding-right: 30px;
+    position: relative;
+}
+
+.valid-border:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.6) !important;
+}
+
+/* Mensaje de éxito */
+.valid-message {
+    color: #28a745;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Contenedor general */
+.form-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
 
 @import '../bootstrap/scss/bootstrap.scss';

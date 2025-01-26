@@ -6,6 +6,8 @@ import { resources } from '../js/traductions.js'
 
 import '../../node_modules/i18next/dist/umd/i18next.min.js'
 
+import '../js/form_validator_regex.js'
+
 // Espera a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Recogemos el idioma guardado en el localStorage del navegador
@@ -28,6 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateContent () {
     document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n')
+      const translatedText = i18next.t(key)
+
+      if (element.tagName === 'INPUT' && (element.type === 'text' || element.type === 'search' || element.type === 'email' || element.type === 'password')) {
+        element.setAttribute('placeholder', translatedText)
+      }
       element.innerHTML = i18next.t(key)
     })
 

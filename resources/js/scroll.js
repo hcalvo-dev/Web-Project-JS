@@ -9,7 +9,6 @@ window.addEventListener('scroll', function () {
 
 export function scrollToHash () {
   if (window.location.hash) {
-    console.log('Hash encontrado:', window.location.hash)
     const target = document.querySelector(window.location.hash)
     if (target) {
       console.log('Elemento objetivo encontrado:', target)
@@ -21,7 +20,5 @@ export function scrollToHash () {
     } else {
       console.warn('No se encontró el elemento con el ID:', window.location.hash)
     }
-  } else {
-    console.log('No hay hash en la URL.')
   }
 }

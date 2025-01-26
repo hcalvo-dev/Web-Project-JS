@@ -73,8 +73,8 @@
                                         aria-label="Ir a la página de inicio" data-i18n="nav_home">Inicio</a>
                                 </li>
                                 <li class="nav-item me-1">
-                                    <a href="../pages/destinos.html" class="nav-link px-2 text-black" aria-label="Destinos"
-                                        data-i18n="nav_destino">Destinos</a>
+                                    <a href="../pages/destinos.html" class="nav-link px-2 text-black"
+                                        aria-label="Destinos" data-i18n="nav_destino">Destinos</a>
                                 </li>
                                 <li class="nav-item me-1">
                                     <a href="../pages/contacto.html" class="nav-link px-2 text-black"
@@ -144,22 +144,23 @@
     <main class="form-signin container my-5 py-5 d-flex align-content-center justify-content-center" role="main">
 
         <form class="d-flex flex-column w-50 p-4 shadow rounded" id="login-form" novalidate>
-            <h1 class="fs-3 mb-3 fw-normal" id="form-title">Inciar Sesión</h1>
+            <h1 class="fs-3 mb-3 fw-normal" id="form-title" data-i18n="login_title">Inciar Sesión</h1>
 
             <!-- Campo de correo electrónico -->
             <div class="w-100 mb-3">
-                <label for="validationCustomEmail" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="validationCustomEmail" placeholder="name@example.com"
-                    required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    title="Introduce una dirección de correo válida. Ejemplo: name@example.com">
+                <label for="validationCustomEmail" class="form-label"
+                    data-i18n="contact_form_labelEmail">Correo electrónico</label>
+                <input type="text" class="form-control" id="validationCustomEmail" data-i18n="contact_form_email"
+                    placeholder="tucorreo@example.com" required
+                    title="Introduce una dirección de correo válida. Ejemplo: tucorreo@example.com">
             </div>
 
             <!-- Campo de contraseña -->
             <div class="w-100 my-3">
-                <label for="validationCustomPassword" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="validationCustomPassword" placeholder="Contraseña"
-                    required minlength="8"
-                    pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^*_=:;,.?])[A-Za-z\d!@#$%^*_=:;,.?]{8,}"
+                <label for="validationCustomPassword" id="password-label" class="form-label"
+                    data-i18n="login_form_labelPassword">Contraseña</label>
+                <input type="password" class="form-control" id="validationCustomPassword"
+                    data-i18n="login_form_password" placeholder="Tu contraseña" required minlength="8"
                     title="La contraseña debe contener una mayúscula, una minúscula, un número, un carácter especial y al menos 8 caracteres.">
             </div>
 
@@ -168,7 +169,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="remember-me" id="rememberMe"
                         aria-label="Recuérdame para la próxima vez">
-                    <label class="form-check-label" for="rememberMe">
+                    <label class="form-check-label" for="rememberMe" data-i18n="login_form_rememberMe">
                         Recuérdame
                     </label>
                 </div>
@@ -176,7 +177,8 @@
 
             <!-- Botón de envío -->
             <div class="w-100 mt-4">
-                <button class="btn btn-primary w-100" type="submit">Iniciar sesión</button>
+                <button class="btn btn-primary w-100" type="submit" aria-label="Iniciar sesión"
+                    data-i18n="login_form_boton">Iniciar sesión</button>
             </div>
         </form>
     </main>
