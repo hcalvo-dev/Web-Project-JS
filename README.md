@@ -11,9 +11,9 @@ data-i18n="[carousel_slide1_days]"
 ### Requisitos
 
 - [x] **Selector de idioma**: Español / Inglés. Cambia dinámicamente los textos usando JavaScript o jQuery.
-- [ ] **Dos formularios**:
+- [x] **Dos formularios**:
   - [x] Validado con el plugin jQuery Validate.
-  - [ ] Validado con expresiones regulares.
+  - [x] Validado con expresiones regulares.
 - [x] **Fichero JSON**: Información almacenada en el servidor accesible mediante Ajax.
 - [x] **Plugin DataTable**: Mostrar información relacionada, utilizando un fichero JSON distinto si se aplica.
 - [x] **Aportación extra**: Incorporar una librería o framework no visto en clase.
