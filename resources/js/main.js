@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const langFlag = document.getElementById('currentLangFlag')
     const langLabel = document.getElementById('currentLangLabel')
 
-    if (langFlag && langLabel) { // Verifica que los elementos existan
+    if (langFlag && langLabel) { 
       if (currentLang === 'en') {
         langFlag.src = 'resources/img/UK.png'
         langFlag.alt = 'UK Flag'

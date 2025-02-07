@@ -12,15 +12,22 @@ function updateContent () {
 
   // Actualizar los mensajes de validación dinámicos
   document.querySelectorAll('.error-message, .valid-message').forEach(element => {
-    const inputId = element.closest('.form-group').querySelector('input').id
+    const formGroup = element.closest('.form-group')
+    if (!formGroup) return // Evita que se ejecute el código si no hay un .form-group
+  
+    const input = formGroup.querySelector('input')
+    if (!input) return // Evita errores si no hay un input dentro del form-group
+  
+    const inputId = input.id
     const key = element.classList.contains('error-message')
       ? `error_message_${inputId}`
       : `valid_message_${inputId}`
-
+  
     const translatedMessage = i18next.t(key)
-    const icon = element.querySelector('i').outerHTML // Preservar el icono
+    const icon = element.querySelector('i') ? element.querySelector('i').outerHTML : '' // Maneja el caso donde no haya un icono
     element.innerHTML = `${icon} ${translatedMessage}`
   })
+  
 
   // Cambiamos la bandera y el texto del botón en base al idioma actual
   const currentLang = i18next.language

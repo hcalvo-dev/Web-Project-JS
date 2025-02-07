@@ -23,9 +23,6 @@
     "url": "https://github.com/hcalvo-dev/Web-Project-JS/issues"
   },
   "homepage": "https://github.com/hcalvo-dev/Web-Project-JS#readme",
-  "devDependencies": {
-    "standard": "17.1.2"
-  },
   "eslintConfig": {
     "extends": "standard"
   },
