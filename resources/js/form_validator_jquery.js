@@ -22,7 +22,6 @@ $.validator.addMethod(
   },
   'El formato del correo no es válido'
 )
-
 $(document).ready(function () {
   $('#contact-form').validate({
     rules: {
@@ -32,7 +31,7 @@ $(document).ready(function () {
       },
       email: {
         required: true,
-        customEmail: true // Aplicar la regla personalizada
+        customEmail: true 
       },
       message: {
         required: true,
@@ -42,15 +41,15 @@ $(document).ready(function () {
     },
     messages: {
       name: {
-        required: 'Por favor ingresa tu nombre completo',
-        minlength: 'Tu nombre debe ser de no menos de 5 caracteres'
+        required: i18next.t('name_required'),
+        minlength: i18next.t('name_minlength')
       },
       email: {
-        required: 'Por favor ingresa un correo válido',
-        customEmail: 'El formato del correo no es válido'
+        required: i18next.t('email_required'),
+        customEmail: i18next.t('email_invalid')
       },
-      message: 'Por favor ingresa un mensaje de al menos 10 caracteres',
-      agree: 'Por favor acepta nuestra política'
+      message: i18next.t('message_required'),
+      agree: i18next.t('agree_required')
     },
     errorClass: 'is-invalid',
     validClass: 'is-valid',
@@ -67,3 +66,20 @@ $(document).ready(function () {
     }
   })
 })
+
+// Función para actualizar los mensajes de error
+function updateValidationErrorMessages() {
+  $('.invalid-feedback').each(function () {
+    let inputName = $(this).prev('input, textarea').attr('name'); // Obtener el campo relacionado
+    if (inputName) {
+      let newMessage = i18next.t(inputName + '_required'); // Obtener el mensaje traducido
+      $(this).text(newMessage); // Actualizar el mensaje de error
+    }
+  });
+}
+
+// Escuchar cambios de idioma
+i18next.on('languageChanged', function () {
+  updateValidationErrorMessages();
+});
+

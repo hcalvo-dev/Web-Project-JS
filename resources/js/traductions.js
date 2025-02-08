@@ -219,6 +219,16 @@ export const resources = {
       construction_button: 'Explorar otros destinos',
       construction_alert: '¡No te lo pierdas! Actualizaremos nuestro catalogo en breves.',
 
+      // -- Formulario Jquery --
+      name_required: "Por favor ingresa tu nombre completo",
+      name_minlength: "Tu nombre debe ser de al menos 5 caracteres",
+      email_required: "Por favor ingresa un correo válido",
+      email_invalid: "El formato del correo no es válido",
+      message_required: "Por favor ingresa un mensaje de al menos 10 caracteres",
+      agree_required: "Por favor acepta nuestra política",
+      success_message: "Formulario enviado correctamente.",
+
+
       // -- Popover --
       popover_title: 'Carrito actualizado',
       popover_content: 'Plan añadido correctamente!',
@@ -477,6 +487,15 @@ export const resources = {
       construction_text: 'We are preparing new incredible destinations for you. <br />Coming soon!',
       construction_button: 'Explore other destinations',
       construction_alert: 'Don\'t miss it! We will update our catalog soon.',
+
+      // -- Formulario Jquery --
+      name_required: "Please enter your full name",
+      name_minlength: "Your name must be at least 5 characters long",
+      email_required: "Please enter a valid email address",
+      email_invalid: "The email format is not valid",
+      message_required: "Please enter a message of at least 10 characters",
+      agree_required: "Please accept our policy",
+      success_message: "Form sent successfully.",
 
       // -- Popover --
       popover_title: 'Cart Updated',

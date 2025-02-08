@@ -68,3 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 })
+
+// Función para actualizar el atributo lang
+function updateLangAttribute() {
+  const currentLang = i18next.language || 'es'; // Obtener el idioma actual (por defecto 'es')
+  document.documentElement.setAttribute('lang', currentLang); // Cambiar el atributo lang
+}
+
+// Escuchar cambios de idioma y actualizar el atributo lang
+i18next.on('languageChanged', function () {
+  updateLangAttribute();
+});
+
+// Llamar a la función al cargar la página para establecer el lang correcto
+document.addEventListener('DOMContentLoaded', updateLangAttribute);

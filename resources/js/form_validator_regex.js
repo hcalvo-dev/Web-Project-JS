@@ -13,10 +13,12 @@ function updateContent () {
   // Actualizar los mensajes de validación dinámicos
   document.querySelectorAll('.error-message, .valid-message').forEach(element => {
     const formGroup = element.closest('.form-group')
-    if (!formGroup) return // Evita que se ejecute el código si no hay un .form-group
+    if (!formGroup) return // Se busca el elemento padre más cercano con la clase .form-group.
+                          // Si no se encuentra, la función termina para evitar errores.
   
     const input = formGroup.querySelector('input')
-    if (!input) return // Evita errores si no hay un input dentro del form-group
+    if (!input) return // Se busca un elemento <input> dentro del .form-group.
+                      // Si no existe, la función termina.
   
     const inputId = input.id
     const key = element.classList.contains('error-message')
